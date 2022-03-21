@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css"
+    />
+
+    <!-- Sass cdn  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sass.js/0.9.12/sass.sync.min.js"></script>
+
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <!-- Style file css -->
+    <link rel="stylesheet" type="text/css" href="dist/css/styles.css" />
+
+    <title>Orange</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <aside id="sidebar">
+        <section class="section-top">
+          <i class="zmdi zmdi-close" onclick="toggleDrawer()"></i>
+          <div class="app-logo">
+            <h3>LOGO</h3>
+          </div>
+          <div class="routes">
+            <ul>
+              <li>oredering</li>
+              <li>oredering</li>
+              <li class="active">operations</li>
+              <li>oredering</li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-bottom">
+          <div class="indicator">
+            <i class="zmdi zmdi-info-outline"></i>
+            <p>CICSK Wiki</p>
+          </div>
+          <div class="indicator">
+            <i class="zmdi zmdi-info-outline"></i>
+            <p>F-Inventory GUI</p>
+          </div>
+          <div class="img-holder logo">
+            <img src="./src/assets/logo.png" alt="logo" />
+          </div>
+        </section>
+      </aside>
+      <aside>
+        <div class="filter-container">
+          <div class="header">
+            <div class="d-flex align-items-center">
+              <i class="zmdi zmdi-menu" onclick="toggleDrawer()"></i>
+              <p>customer inventory scorecard</p>
+            </div>
+            <div class="date-filter">
+              <span>refresh date</span>
+              <input
+                type="datetime-local"
+                id="datetime-local"
+                value="2022-03-20T19:30:00"
+              />
+            </div>
+          </div>
+          <div class="filters">
+            <div class="holder">
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <div class="filter">
+                <label for="inputState">customer entity perimeter</label>
+                <select id="inputState" class="form-control">
+                  <option>All Lists</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                </select>
+              </div>
+              <p class="filter-reset">Clear all filters</p>
+            </div>
+            <div class="buttons">
+              <div class="more-filters-btn">
+                <i class="zmdi zmdi-filter-list"></i>
+                <p>more filters</p>
+              </div>
+              <div class="search-btn">
+                <i class="zmdi zmdi-search"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-container">
+          <p>data quality global report</p>
+          <div class="holder">
+            <div class="stats-1">
+              <div class="stat">
+                <p>inaccurate resources</p>
+                <p>30445</p>
+              </div>
+              <div class="stat">
+                <p>discrepancy level</p>
+                <p>14,5%</p>
+              </div>
+              <div class="stat">
+                <p>data quality level</p>
+                <p>30445</p>
+              </div>
+            </div>
+            <div class="stats-2">
+              <div class="header">
+                <div class="title">
+                  <p>inspected resources</p>
+                  <i class="zmdi zmdi-info-outline"></i>
+                </div>
+                <div class="total">
+                  <p>total</p>
+                  <span>1430445</span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="stat">
+                  <p>14304</p>
+                  <p>Switch</p>
+                </div>
+                <div class="stat">
+                  <p>143</p>
+                  <p>Router</p>
+                </div>
+                <div class="stat">
+                  <p>2987</p>
+                  <p>Circuit</p>
+                </div>
+                <div class="stat">
+                  <p>14304</p>
+                  <p>Wirless access point</p>
+                </div>
+                <p class="other">Other</p>
+              </div>
+            </div>
+            <div class="export-btn">
+              <i class="zmdi zmdi-file-text"></i>
+              <p>discrepency report</p>
+            </div>
+          </div>
+        </div>
+        <div class="tables-container">
+          <div class="tabs">
+            <div class="tab active-tab">
+              <p>data Quality controls</p>
+            </div>
+            <div class="tab">
+              <p>other operational controls</p>
+            </div>
+          </div>
+          <div class="table-holder">
+            <div class="table-responsive">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col">Number of ..</th>
+                    <th scope="col">Discreapancy level</th>
+                    <th scope="col">Discreapancy</th>
+                    <th scope="col">Data correction pro...</th>
+                    <th scope="col">Total</th>
+                    <th scope="col">Data quality</th>
+                    <th scope="col">Data quality</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" class="unread">Site Management | Device</th>
+                    <td>174589</td>
+                    <td>174589</td>
+                    <td><i class="zmdi zmdi-file-text"></i></td>
+                    <td><i class="zmdi zmdi-attachment-alt"></i></td>
+                    <td>174589</td>
+                    <td class="orange">80%</td>
+                    <td class="purple">-5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">
+                      Site Management | Device
+                      <i class="zmdi zmdi-info-outline"></i>
+                    </th>
+                    <td>174589</td>
+                    <td>174589</td>
+                    <td><i class="zmdi zmdi-file-text"></i></td>
+                    <td><i class="zmdi zmdi-attachment-alt"></i></td>
+                    <td>174589</td>
+                    <td class="orange">80%</td>
+                    <td class="purple">-5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="unread">Site Management | Device</th>
+                    <td>174589</td>
+                    <td>174589</td>
+                    <td><i class="zmdi zmdi-file-text"></i></td>
+                    <td><i class="zmdi zmdi-attachment-alt"></i></td>
+                    <td>174589</td>
+                    <td class="orange">80%</td>
+                    <td class="purple">-5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="unread">Site Management | Device</th>
+                    <td>174589</td>
+                    <td>174589</td>
+                    <td><i class="zmdi zmdi-file-text"></i></td>
+                    <td><i class="zmdi zmdi-attachment-alt"></i></td>
+                    <td>174589</td>
+                    <td class="orange">80%</td>
+                    <td class="purple">-5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="unread">Site Management | Device</th>
+                    <td>174589</td>
+                    <td>174589</td>
+                    <td><i class="zmdi zmdi-file-text"></i></td>
+                    <td><i class="zmdi zmdi-attachment-alt"></i></td>
+                    <td>174589</td>
+                    <td class="orange">80%</td>
+                    <td class="purple">-5%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" class="unread">Site Management | Device</th>
+                    <td>174589</td>
+                    <td>174589</td>
+                    <td><i class="zmdi zmdi-file-text"></i></td>
+                    <td><i class="zmdi zmdi-attachment-alt"></i></td>
+                    <td>174589</td>
+                    <td class="orange">80%</td>
+                    <td class="purple">-5%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function toggleDrawer() {
+        document.querySelector("#sidebar").classList.toggle("is-open");
+      }
+    </script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
